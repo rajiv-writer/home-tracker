@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏠 Home Tracker
 
-## Getting Started
+A shared household management web app built to track **shopping lists, expenses, bills, and settlements** between housemates — designed mobile-first and installable as a PWA.
 
-First, run the development server:
+🔗 Live App: https://home-tracker-ebon.vercel.app/
+
+---
+
+## ✨ Features
+
+### 🛒 Shopping List
+- Add items to a shared shopping list
+- Assign items to a housemate
+- Mark items as bought
+- Edit existing items
+- Real-time sync between users
+
+### 💳 Expenses
+- Log daily expenses
+- Assign who paid
+- Categorize expenses (Food, Household, Travel, etc.)
+- Edit existing expenses
+- Monthly expense overview
+
+### 💸 Bills
+- Track recurring bills (Rent, Internet, Utilities, etc.)
+- Set due dates
+- Mark bills as paid/unpaid
+- Overdue bill indicators
+- Edit bill details
+
+### 🧮 Settle Up
+- Automatically calculates:
+  - Total household spending
+  - Fair share per person
+  - Who owes whom and how much
+
+### 📱 Mobile-First PWA
+- Installable on iOS & Android
+- Smooth app-like navigation
+- Bottom navigation bar for quick access
+- Works great on mobile screens
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js 16 (App Router), TypeScript
+- **Backend:** Supabase (Postgres, Auth, Realtime)
+- **Auth:** Supabase Email Auth
+- **Styling:** Custom mobile-first UI
+- **Hosting:** Vercel
+- **Database:** PostgreSQL (via Supabase)
+
+---
+
+## 📸 Screenshots
+
+| Home Dashboard | Shopping | Expenses | Bills | Settle Up |
+|----------------|----------|----------|-------|-----------|
+| ![](public/screenshots/home.png) | ![](public/screenshots/shopping.png) | ![](public/screenshots/expenses.png) | ![](public/screenshots/bills.png) | ![](public/screenshots/settle.png) |
+
+
+---
+
+## 🚀 Installation (Local)
 
 ```bash
+git clone https://github.com/rajiv-writer/home-tracker.git
+cd home-tracker
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a .env.local file with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
 
-## Learn More
+🔮 Roadmap (V2 Ideas)
 
-To learn more about Next.js, take a look at the following resources:
+Analytics dashboard (monthly insights)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Notifications for upcoming bills
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Expense charts & breakdowns
 
-## Deploy on Vercel
+Household roles (admin/member)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Export data (CSV / PDF)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👋 Author
+
+Rajiv Ravindran
+Writer • Data Engineer • Product Builder
+
+This project was built as a practical exploration of product thinking, full-stack development, and household finance workflows.
